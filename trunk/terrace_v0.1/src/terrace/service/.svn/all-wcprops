@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/service
+END
+TerraceMyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/TerraceMyService.java
+END
+TerraceMyServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/TerraceMyServiceImpl.java
+END
+TerraceRegisterableService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/TerraceRegisterableService.java
+END
+TerraceRegisterableServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/TerraceRegisterableServiceImpl.java
+END
+BoardInnerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/BoardInnerService.java
+END
+MessageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/MessageService.java
+END
+TerracePublicService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/TerracePublicService.java
+END
+TerraceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/service/TerraceService.java
+END
+BoardInnerServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/5/trunk/terrace_v0.1/src/terrace/service/BoardInnerServiceImpl.java
+END
+MessageServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/MessageServiceImpl.java
+END
+TerracePublicServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/service/TerracePublicServiceImpl.java
+END
+MemberService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/service/MemberService.java
+END
+TerraceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/service/TerraceServiceImpl.java
+END
+MemberServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/service/MemberServiceImpl.java
+END

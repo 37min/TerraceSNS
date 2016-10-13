@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/12/trunk/terrace_v0.1/WebContent/WEB-INF
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/11/trunk/terrace_v0.1/WebContent/WEB-INF/web.xml
+END
+tiles-def-main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3/trunk/terrace_v0.1/WebContent/WEB-INF/tiles-def-main.xml
+END
+tiles-def-terrace.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/11/trunk/terrace_v0.1/WebContent/WEB-INF/tiles-def-terrace.xml
+END
+tiles-def-member.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/terrace_v0.1/WebContent/WEB-INF/tiles-def-member.xml
+END
+dispatcher-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3/trunk/terrace_v0.1/WebContent/WEB-INF/dispatcher-servlet.xml
+END

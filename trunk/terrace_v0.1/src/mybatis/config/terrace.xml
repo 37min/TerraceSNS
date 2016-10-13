@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 테라스 관련 Config Query -->
+<mapper namespace="ter">
+	<!-- ResultMap - TerraceMyVO -->
+	<resultMap type="tmvo" id="tmvoRM">
+		<result property="mvo.memId" column="myterrace_id" />
+		<result property="tvo.terNo" column="myterrace_tno" />
+	</resultMap>
+
+	<!-- ResultMap - TerraceVO -->
+	<resultMap type="tvo" id="tvoRM">
+		<result property="terNo" column="terrace_no" />
+		<result property="terName" column="terrace_name" />
+		<result property="terIntro" column="terrace_intro" />
+		<result property="terAdmin" column="terrace_admin" />
+		<result property="terLock" column="terrace_lock" />
+		<result property="terRegister" column="terrace_register" />
+		<result property="terCategory" column="terrace_category" />
+		<result property="terJoinList" column="terrace_joinlist" />
+		
+	</resultMap>
+	<resultMap type="tvo" extends="tvoRM" id="tvoExRM">
+		<result property="terIconOrgImg" column="terrace_icon_orgimg" />
+		<result property="terIconNewImg" column="terrace_icon_newimg" />
+		<result property="terCoverOrgImg" column="terrace_cover_orgimg" />
+		<result property="terCoverNewImg" column="terrace_cover_newimg" />
+	</resultMap>
+	
+	<!-- 이하 쿼리문 작성 -->
+	<!-- 전체 테라스 관련 쿼리문 -->
+	<!--  테라스 생성 -->
+	<insert id="createTerrace"  parameterType="tvo" >
+		<selectKey keyProperty="terNo" resultType="int" order="BEFORE">
+			select seq_terrace_no.nextval from dual
+		</selectKey>
+		insert into t_terrace(terrace_no,terrace_name,terrace_intro,terrace_admin,terrace_lock,
+		terrace_register,terrace_category,terrace_joinlist,terrace_icon_orgimg,terrace_icon_newimg,
+		terrace_cover_orgimg,terrace_cover_newimg) 
+		values(#{terNo}, #{terName},#{terIntro},#{terAdmin},#{terLock},
+		#{terRegister},#{terCategory},#{terJoinList},#{terIconOrgImg},#{terIconNewImg},
+		#{terCoverOrgImg},#{terCoverNewImg})
+	</insert>
+
+	
+	<!-- 공개된 전체 테라스 관련 쿼리문 -->
+	<!-- 공개된 전체 테라스 목록 반환 쿼리문 -->
+	<select id="getTerracePublicList" resultMap="tvoExRM">
+		select * from t_terrace where terrace_lock=0
+	</select>
+	<!-- 공개된 전체 테라스에서 카테고리 별 조회 쿼리문-->
+	<select id="searchCatAll" resultMap="tvoExRM" parameterType="string">
+		select * from t_terrace where terrace_category=#{value} and terrace_lock=0
+	</select>
+	
+	<!-- 공개된 전체 테라스에서 테라스명 별 조회 쿼리문-->
+	<select id="searchNameAll" resultMap="tvoExRM" parameterType="string">
+		select * from t_terrace where terrace_name like '%${value}%' and terrace_lock=0
+	</select>
+	
+	<!-- 마이 테라스 관련 쿼리문 -->
+	<!--마이 테라스에서 카테고리 별 조회 쿼리문-->
+	<!-- 
+	조인 처리 할 것
+	<select id="searchCatMy" resultMap="tvoExRM" parameterType="string">
+		select * from t_myterrace where terrace_category=#{value} and terrace_lock=0
+	</select> -->
+	
+	<!-- 가입 가능한 테라스 관련 쿼리문 -->
+	<!-- 가입 가능한 테라스에서 카테고리 별 조회 쿼리문-->
+	<select id="searchCatRegisterable" resultMap="tvoExRM" parameterType="string">
+		select * from t_terrace where terrace_category=#{value} and terrace_lock=0 and terrace_register=1
+	</select>
+	
+	<!-- 가입 가능한 테라스에서 테라스명 별 조회 쿼리문-->
+	<select id="searchNameRegisterable" resultMap="tvoExRM" parameterType="string">
+		select * from t_terrace where terrace_name like '%${value}%' and terrace_lock=0 and terrace_register=1
+	</select>
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

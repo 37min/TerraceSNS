@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/vo
+END
+UnivVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/trunk/terrace_v0.1/src/terrace/vo/UnivVO.java
+END
+MsgRegConfirmVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/terrace/vo/MsgRegConfirmVO.java
+END
+BoardInnerVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/terrace/vo/BoardInnerVO.java
+END
+MsgInviteVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/terrace/vo/MsgInviteVO.java
+END
+TerraceVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/vo/TerraceVO.java
+END
+MsgJoinVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/terrace/vo/MsgJoinVO.java
+END
+MemberVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/terrace/vo/MemberVO.java
+END
+TerraceMyVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/terrace/vo/TerraceMyVO.java
+END
+MsgRegRequestVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/terrace/vo/MsgRegRequestVO.java
+END

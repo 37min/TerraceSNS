@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 테라스 내부 게시판 관련 Config Query -->
+<mapper namespace="bin">
+	<!-- ResultMap 설정 -->
+	<resultMap type="bivo" id="bivoRM">
+		<result property="biNo" column="in_no" />
+		<result property="mvo.memId" column="in_id" />
+		<result property="tvo.terNo" column="in_tno" />
+		<result property="biContents" column="in_contents" />
+		<result property="biDate" column="in_date" />
+		<result property="biLock" column="in_lock" />
+	</resultMap>
+	
+	<!-- 이하 쿼리문 작성 -->
+
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

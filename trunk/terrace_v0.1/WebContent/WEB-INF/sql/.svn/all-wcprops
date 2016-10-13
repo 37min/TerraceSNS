@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/11/trunk/terrace_v0.1/WebContent/WEB-INF/sql
+END
+boardinner.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3/trunk/terrace_v0.1/WebContent/WEB-INF/sql/boardinner.sql
+END
+message.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3/trunk/terrace_v0.1/WebContent/WEB-INF/sql/message.sql
+END
+terrace.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/11/trunk/terrace_v0.1/WebContent/WEB-INF/sql/terrace.sql
+END
+member.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/9/trunk/terrace_v0.1/WebContent/WEB-INF/sql/member.sql
+END

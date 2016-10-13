@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/controller
+END
+BoardInnerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/controller/BoardInnerController.java
+END
+MessageController.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/controller/MessageController.java
+END
+TerracePublicController.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/controller/TerracePublicController.java
+END
+TerraceController.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/controller/TerraceController.java
+END
+MemberController.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/controller/MemberController.java
+END
+AdminController.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/controller/AdminController.java
+END
+TerraceMyController.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/controller/TerraceMyController.java
+END
+TerraceRegisterableController.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/controller/TerraceRegisterableController.java
+END

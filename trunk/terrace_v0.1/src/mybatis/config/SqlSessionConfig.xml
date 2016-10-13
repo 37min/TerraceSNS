@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- MyBatis DataSource에 대한 설정 및 SQL 정의 xml 에 대한 매핑 -->
+<configuration>
+	<!-- 사용할 클래스의 별칭 정의 -->
+	<typeAliases>
+		<!-- 테라스 내부 게시판 Value Object -->
+		<typeAlias type="terrace.vo.BoardInnerVO" alias="bivo" />
+		<!-- 회원 Value Object -->
+		<typeAlias type="terrace.vo.MemberVO" alias="mvo" />
+		<!-- 초대 메시지 Value Object -->
+		<typeAlias type="terrace.vo.MsgInviteVO" alias="mivo" />
+		<!-- 조인 메시지 Value Object -->
+		<typeAlias type="terrace.vo.MsgJoinVO" alias="mjvo" />
+		<!-- 가입승인여부 메시지 Value Object -->
+		<typeAlias type="terrace.vo.MsgRegConfirmVO" alias="mrcvo" />
+		<!-- 가입신청 메시지 Value Object -->
+		<typeAlias type="terrace.vo.MsgRegRequestVO" alias="mrrvo" />
+		<!-- 마이 테라스 Value Object -->
+		<typeAlias type="terrace.vo.TerraceMyVO" alias="tmvo" />
+		<!-- 테라스 Value Object -->
+		<typeAlias type="terrace.vo.TerraceVO" alias="tvo" />
+		<!-- 대학 Value Object -->
+		<typeAlias type="terrace.vo.UnivVO" alias="uvo" />
+	</typeAliases>
+
+	<!-- sql mapping config xml을 연결 -->
+	<mappers>
+		<mapper resource="mybatis/config/boardinner.xml" />
+		<mapper resource="mybatis/config/member.xml" />
+		<mapper resource="mybatis/config/message.xml" />
+		<mapper resource="mybatis/config/terrace.xml" />
+		<mapper resource="mybatis/config/univ.xml" />
+	</mappers>
+</configuration>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 회원 관련 Config Query -->
+<mapper namespace="univ">
+	<!-- ResultMap -->
+	<resultMap type="uvo" id="uvoRM">
+		<result property="univName" column="univ_name" />
+		<result property="univLoc" column="univ_loc" />
+		<result property="univEmail" column="univ_email" />
+	</resultMap>
+
+	<!-- 이하 쿼리문 작성 -->
+	<!-- 지역에 따른 대학명 목록 조회 쿼리 -->
+	<select id="getUnivListByUnivLoc" resultType="string">
+			select univ_name from univ where univ_loc=#{value}
+	</select>
+	
+	<!-- 대학명에 따른 대학 이메일 주소 조회 쿼리 -->
+	<select id="getUnivEmailByUnivName" resultType="string">
+			select univ_email from univ where univ_name=#{value}
+	</select>
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/dao
+END
+TerracePublicDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/TerracePublicDAO.java
+END
+MessageDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/MessageDAO.java
+END
+BoardInnerDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/BoardInnerDAOImpl.java
+END
+TerraceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/dao/TerraceDAO.java
+END
+TerracePublicDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/TerracePublicDAOImpl.java
+END
+MessageDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/MessageDAOImpl.java
+END
+TerraceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/terrace/dao/TerraceDAOImpl.java
+END
+MemberDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/dao/MemberDAO.java
+END
+MemberDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/terrace/dao/MemberDAOImpl.java
+END
+TerraceMyDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/TerraceMyDAO.java
+END
+TerraceMyDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/TerraceMyDAOImpl.java
+END
+TerraceRegisterableDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/TerraceRegisterableDAO.java
+END
+TerraceRegisterableDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/TerraceRegisterableDAOImpl.java
+END
+BoardInnerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3/trunk/terrace_v0.1/src/terrace/dao/BoardInnerDAO.java
+END

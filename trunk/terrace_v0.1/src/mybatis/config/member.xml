@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 회원 관련 Config Query -->
+<mapper namespace="mem">
+	<!-- ResultMap -->
+	<resultMap type="mvo" id="mvoRM">
+		<result property="memId" column="member_id" />
+		<result property="memPass" column="member_pass" />
+		<result property="memName" column="member_name" />
+		<result property="memUniv" column="member_univ" />
+		<result property="memDept" column="member_dept" />
+		<result property="memNo" column="member_no" />
+		<result property="memPhone" column="member_phone" />
+	</resultMap>
+	<!-- ResultMap extends -->
+	<resultMap type="mvo" extends="mvoRM" id="mvoExRM">
+		<result property="memOrgImg" column="member_orgimg" />
+		<result property="memNewImg" column="member_newimg" />
+	</resultMap>
+
+	<!-- 이하 쿼리문 작성 -->
+	<!-- 회원 DB 삽입 -->
+	<insert id="registerMember" parameterType="mvo">
+		insert into
+		t_member(member_id,member_pass,member_name,member_univ,member_dept,member_no,member_phone,member_orgimg,member_newimg)
+		values(#{memId},#{memPass},#{memName},#{memUniv},#{memDept},#{memNo},#{memPhone},#{memOrgImg},#{memNewImg})
+	</insert>
+	<!-- 회원 로그인 쿼리 -->
+	<select id="loginMember" resultMap="mvoExRM" parameterType="mvo">
+		select * from t_member where member_id=#{memId} and
+		member_pass=#{memPass}
+	</select>
+	<!-- 아이디에 해당하는 회원 검색 -->
+	<select id="findMemberById" resultMap="mvoExRM" parameterType="string">
+		select * from t_member where member_id=#{memId}
+	</select>
+	<!-- 학번에 해당하는 회원 조회 -->
+	<select id="memNoCheck" resultType="int" parameterType="string">
+		select count(*) from t_member where member_no=#{memNo}
+	</select>
+	<!-- 이름과 학번에 모두 해당하는 회원 조회 -->
+	<select id="findMemIdByNameAndMemNo" resultMap="mvoExRM"
+		parameterType="mvo">
+		select * from t_member where member_name=#{memName} and member_no=#{memNo}
+	</select>
+	<!-- 회원정보를 업데이트하는 쿼리 -->
+	<update id="modifyMember" parameterType="mvo">
+		update t_member set
+		member_name=#{memName},
+		member_dept=#{memDept},
+		member_phone=#{memPhone}
+		where member_id=#{memId}
+	</update>
+	<!-- 이미지 포함 회원정보를 업데이트하는 쿼리 -->
+	<update id="modifyMemberAndImg" parameterType="mvo">
+		update t_member set
+		member_name=#{memName},
+		member_dept=#{memDept},
+		member_phone=#{memPhone},
+		member_orgimg=#{memOrgImg},
+		member_newimg=#{memNewImg}
+		where member_id=#{memId}
+	</update>
+	<!-- 회원 비밀번호를 변경하는 쿼리 -->
+	<update id="modifyPass" parameterType="mvo">
+		update t_member set member_pass=#{memPass} where member_id=#{memId}
+	</update>
+	<!-- 회원 계정 비활성화 - 활성화 유무 업데이트 쿼리 -->
+	<update id="sleepMember" parameterType="mvo">
+		update t_member set member_sleep=#{memSleep} where member_id=#{memId}
+	</update>
+</mapper>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

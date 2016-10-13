@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<!-- annotation 기반의 Spring MVC 설정 -->
+	<context:component-scan base-package="terrace"></context:component-scan>
+
+	<!-- annotation Ajax 관련 설정 -->
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter" />
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- ViewResolver(뷰 검색) 설정 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/view/" />
+		<property name="suffix" value=".jsp" />
+		<property name="order" value="1" />
+	</bean>
+
+	<!-- DBCP 설정 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<!-- 드라이버 생성 -->
+		<property name="driverClassName">
+			<value>oracle.jdbc.driver.OracleDriver</value>
+		</property>
+		<property name="url"><!-- 대상 경로 -->
+			<value>jdbc:oracle:thin:@127.0.0.1:1521:xe</value>
+		</property>
+		<property name="username">
+			<value>scott</value>
+		</property>
+		<property name="password">
+			<value>tiger</value>
+		</property>
+		<property name="maxActive"><!-- connection의 최대 생성 갯수 제한 -->
+			<value>30</value>
+		</property>
+	</bean>
+
+	<!-- MyBatis 설정(DAO와 DB간의 연동) -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation"
+			value="classpath:mybatis/config/SqlSessionConfig.xml" />
+	</bean>
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+
+	<!-- Tile 설정(초기-최초 정의) -->
+	<bean id="tilesConfig"
+		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles-def-*.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- Tiles ViewResolver 설정 (Controller에서 반환하는 viewName 에 의해 Tiles View가 
+		제공 order를 0으로 setting) -->
+	<bean id="tilesViewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles2.TilesView" />
+		<property name="order" value="0" />
+	</bean>
+
+	<!-- Interceptor 설정 -->
+	<!-- (dispatcher 에서 기능 수행 요청을 했을 때, 서비스 권한이 있는 사용자만이 수행하도록 제한을 두는 역할) -->
+	<!-- 로그인한 회원만 서비스 이용이 가능하도록 권한을 부여 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/auth_*.do" />
+			<mvc:mapping path="/*/auth_*.do" />
+			<bean class="terrace.common.LoginCheckInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!-- File Upload를 위한 ViewResolver 설정 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="UTF-8"></property>
+		<property name="maxUploadSize" value="-1"></property>
+	</bean>
+</beans>
+
+

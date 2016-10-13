@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/terrace_v0.1/WebContent/WEB-INF/view/member
+END
+member_findIdOrPass_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/5/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_findIdOrPass_view.jsp
+END
+member_login_ok.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/9/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_login_ok.jsp
+END
+member_login_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/9/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_login_view.jsp
+END
+member_login_fail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_login_fail.jsp
+END
+member_modifyPass_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_modifyPass_view.jsp
+END
+member_publishkey_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/5/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_publishkey_view.jsp
+END
+member_modifyMember_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/12/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_modifyMember_view.jsp
+END
+member_sleepMember_ok.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/9/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_sleepMember_ok.jsp
+END
+member_findMemId_result.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/5/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_findMemId_result.jsp
+END
+member_sleepMember_View.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/9/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_sleepMember_View.jsp
+END
+member_register_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/9/trunk/terrace_v0.1/WebContent/WEB-INF/view/member/member_register_view.jsp
+END

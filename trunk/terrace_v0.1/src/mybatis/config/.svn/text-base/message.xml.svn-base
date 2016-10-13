@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 메시지 관련 Config Query -->
+<mapper namespace="msg">
+	<!-- ResultMap - MsgInvite -->
+	<resultMap type="mivo" id="mivoRM">
+		<result property="miNo" column="invite_no" />
+		<result property="miTvo.terNo" column="invite_tno" />
+		<result property="miSendMvo.memId" column="invite_send_id" />
+		<result property="miRecMvo.memId" column="invite_receive_id" />
+		<result property="miDate" column="invite_date" />
+	</resultMap>
+	
+	<!-- ResultMap - MsgJoin -->
+	<resultMap type="mjvo" id="mjvoRM">
+		<result property="mjNo" column="join_no" />
+		<result property="mjSendTvo.terNo" column="join_send_no" />
+		<result property="mjRecTvo.terNo" column="join_receive_tno" />
+		<result property="mjSendMembers" column="join_send_members" />
+		<result property="mjSendTitle" column="join_send_title" />
+		<result property="mjSendMsg" column="join_send_msg" />
+		<result property="mjDate" column="join_date" />
+	</resultMap>
+
+	<!-- ResultMap - MsgRegConfirm -->
+	<resultMap type="mrcvo" id="mrcvoRM">
+		<result property="mrcNo" column="confirm_no" />
+		<result property="mrcSendTvo.terNo" column="confirm_send_tno" />
+		<result property="mrcSendMvo.memId" column="confirm_send_id" />
+		<result property="mrcRecMvo.memId" column="confirm_receive_id" />
+		<result property="mrcCofirm" column="confirm_confirm" />
+		<result property="mrcDate" column="confirm_date" />
+	</resultMap>
+	
+	<!-- ResultMap - MsgRegRequest -->
+	<resultMap type="mrrvo" id="mrrvoRM">
+		<result property="mrrNo" column="request_no" />
+		<result property="mrrRecTvo.terNo" column="request_tno" />
+		<result property="mrrSendMvo.memId" column="request_send_id" />
+		<result property="mrrDate" column="request_date" />
+	</resultMap>
+	
+	<!-- 이하 쿼리문 작성 -->
+	<!-- 초대 메시지 관련 쿼리문 -->
+
+
+	<!-- 가입 신청 메시지 관련 쿼리문 -->
+	
+	
+	<!-- 가입 승인여부 메시지 관련 쿼리문 -->
+	
+	
+	<!-- 조인 메시지 관련 쿼리문 -->
+	
+	
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

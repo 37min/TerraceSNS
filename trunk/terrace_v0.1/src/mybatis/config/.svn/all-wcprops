@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/mybatis/config
+END
+member.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/terrace_v0.1/src/mybatis/config/member.xml
+END
+SqlSessionConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/5/trunk/terrace_v0.1/src/mybatis/config/SqlSessionConfig.xml
+END
+univ.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/terrace_v0.1/src/mybatis/config/univ.xml
+END
+boardinner.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/mybatis/config/boardinner.xml
+END
+message.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/9/trunk/terrace_v0.1/src/mybatis/config/message.xml
+END
+terrace.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/11/trunk/terrace_v0.1/src/mybatis/config/terrace.xml
+END
