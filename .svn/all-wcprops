@@ -1,5 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
-V 16
-/svn/!svn/ver/12
+V 35
+/svn/!svn/ver/12/trunk/terrace_v0.1
+END
+.springBeans
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/terrace_v0.1/.springBeans
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/5/trunk/terrace_v0.1/pom.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/terrace_v0.1/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/terrace_v0.1/.project
 END
